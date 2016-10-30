@@ -13,14 +13,14 @@ var smtpTransport = nodemailer.createTransport("SMTP", {
 exports.contact = function(req,res,callback){
     var name = req.body.name;
     var email = req.body.email;
-    var msg = "문의 내용은 다음과 같습니다. \n ==========================="
+    var msg = "문의 내용은 다음과 같습니다. \n============================\n"
         +" \n"+req.body.message +" \n"+" \n" + "from :" + name + ' <' +  email +  '>';
 
 
     var mailOptions = {
         from: name + ' <' +  email +  '>',
         to: 'yonkotv.contact@gmail.com',
-        subject: name+ ' 님의 문의 메일 입니다.' ,
+        subject:'[기타문의]'+ name+ ' 님의 문의 메일 입니다.' ,
         text: msg
     };
 
@@ -41,7 +41,7 @@ exports.contact = function(req,res,callback){
 
 
 
-    res.redirect('/');
+    res.redirect('/etc_contact');
 
 }
 

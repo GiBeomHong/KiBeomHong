@@ -59,6 +59,7 @@ app.all('/popup',Pagecntr.popup);
 app.all('/reply',Pagecntr.reply);
 app.all('/donor',Pagecntr.donor);
 app.all('/channel',Pagecntr.channel);
+app.all('/etc_contact',Pagecntr.etc_contact);
 app.all('/testfb',testfb.test_fb);
 app.all('/test',youtube_api.youtube_api);
 

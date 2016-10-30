@@ -38,6 +38,9 @@ exports.donor = function(req,res,callback){
     res.render('../views/donor.html');
 }
 
+exports.etc_contact = function (req,res,callback){
+    res.render('../views/etc_contact.html');
+}
 
 // youtube_api 사용 //
 var google = require('googleapis');
