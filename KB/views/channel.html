@@ -50,6 +50,26 @@
 
 </section>
 
+<section id="gallery" class="parallax-section" style="padding-top: 1px;">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+                연고티비 youtube 구독자 수 : <%=sub_cnt %> 명<br><br>
+                연고티비 youtube 조회수 : <%=view_cnt %> 회<br><br>
+                연고티비 youtube 동영상 수 : <%=video_cnt %> 개<br><br>
+            </div>
+            <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+
+            </div>
+
+            <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+            </div>
+        </div>
+
+</section>
+
+
 <% include ../public/common/footer %>
 
 <!-- JAVASCRIPT JS FILES -->
@@ -61,15 +81,11 @@
 <script src="test_js/wow.min.js"></script>
 <script src="test_js/custom.js"></script>
 
-<script>
-    function login_check(){
-        alert("로그인이 필요합니다!");
-        location.href="./login.php";
-    }
 
-    function contact(){
-        alert("접수 완료되었습니다!");
-    }
+<script type="text/javascript">
+    var sub_cnt =  <%-JSON.stringify(sub_cnt)%>;
+    var view_cnt =  <%-JSON.stringify(view_cnt)%>;
+    var video_cnt =  <%-JSON.stringify(video_cnt)%>;
 </script>
 
 </body>

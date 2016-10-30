@@ -17,6 +17,7 @@ var contact = require('./Cntrl/contact');
 var enroll = require('./Cntrl/enroll_vod');
 
 var testfb = require('./Cntrl/fbcount');
+var youtube_api = require('./Cntrl/youtube_api');
 
 //var db = require('./mongodb');
 //db.start();
@@ -28,7 +29,7 @@ app.set('view engine', 'ejs');
 app.engine("html", ejs.renderFile);
 
 
-app.set('port', process.env.PORT || 9000);
+app.set('port', process.env.PORT || 3000);
 app.set('host', process.env.HOST || '52.88.241.133');
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port') + " "+app.get('host'));
@@ -58,7 +59,8 @@ app.all('/popup',Pagecntr.popup);
 app.all('/reply',Pagecntr.reply);
 app.all('/donor',Pagecntr.donor);
 app.all('/channel',Pagecntr.channel);
-app.all('/testfb',testfb.test_fb)
+app.all('/testfb',testfb.test_fb);
+app.all('/test',youtube_api.youtube_api);
 
 app.all('/contact',contact.contact);
 //app.all('/enroll_vod',enroll.new_VR);
