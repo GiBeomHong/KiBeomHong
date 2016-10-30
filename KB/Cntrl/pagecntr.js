@@ -2,6 +2,8 @@
  * Created by GiBeomHong on 2016. 8. 7..
  */
 
+var request = require('request');
+
 exports.mainpage = function(req,res,callback){
     res.render('../views/main.html');
 }
@@ -50,9 +52,18 @@ var queryOptions = {
     'maxResults': 5,
     'id': 'UCelPbnoAuzgRDFJAsJ4Du7A'
 };
+var fb_graph = require('fbgraph');
+fb_graph.setAccessToken('1606945842934576|ac7afc97c9d7f46b91751e03271a0585');
+var fb_sub_cnt = 0;
+fb_graph.get("yonkotv?fields=fan_count", function(err, res, callback) {
+    fb_sub_cnt = res.fan_count;
+});
+
 
 exports.channel = function(req,res,callback){
 
+
+    /* youtube api 사용 */
     youtube.channels.list(queryOptions, function (err, data) {
         if (err) {
             console.error(err);
@@ -63,11 +74,14 @@ exports.channel = function(req,res,callback){
         var view_cnt = data.items[0].statistics.viewCount;
         var video_cnt = data.items[0].statistics.videoCount;
 
-        console.log("연고 티비의 총 구독자 수 : " + sub_cnt + " 명");
-        console.log("연고 티비의 총 view 수 : " + view_cnt + " 회");
-        console.log("연고 티비의 총 동영상 수 : " + video_cnt + " 개");
+        /*facebook api 사용 */
+        //fb_graph.get("yonkotv?fields=fan_count", function(err, res, callback) {
+        //    count = res.fan_count;
+        //    res.render('../views/channel.html',{sub_cnt: sub_cnt, view_cnt : view_cnt, video_cnt : video_cnt, fb_sub_cnt : count});
+        //});
 
-        res.render('../views/channel.html',{sub_cnt: sub_cnt, view_cnt : view_cnt, video_cnt : video_cnt});
+
+        res.render('../views/channel.html',{sub_cnt: sub_cnt, view_cnt : view_cnt, video_cnt : video_cnt, fb_sub_cnt : fb_sub_cnt});
     });
 
 }
