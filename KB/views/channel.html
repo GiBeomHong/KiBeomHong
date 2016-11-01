@@ -53,17 +53,20 @@
 <section id="gallery" class="parallax-section" style="padding-top: 1px;">
     <div class="container">
         <div class="row">
-
-            <div class="col-md-3 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-md-6 col-sm-4 wow fadeInUp" data-wow-delay="0.3s" style="padding-top: 20px;">
+                <i class="fa fa-youtube fa-5x" aria-hidden="true"></i><br><br>
                 연고티비 youtube 구독자 수 : <%=sub_cnt %> 명<br><br>
                 연고티비 youtube 조회수 : <%=view_cnt %> 회<br><br>
                 연고티비 youtube 동영상 수 : <%=video_cnt %> 개<br><br>
+                <a href="https://www.youtube.com/channel/UCelPbnoAuzgRDFJAsJ4Du7A" target="_blank"> 연고티비 Youtube 바로가기</a>
             </div>
-            <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-md-6 col-sm-4 wow fadeInUp" data-wow-delay="0.3s" style="padding-top: 20px;">
+                <i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i><br><br>
+                <br>
                 연고티비 facebook 좋아요 수 : <%=fb_sub_cnt %> 명<br><br>
-            </div>
-
-            <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+                연고티비 facebook 총 게시물 수 : <%=fb_post_cnt %> 개<br><br>
+                <br>
+                <a href="https://www.facebook.com/yonkotv/?fref=ts" target="_blank"> 연고티비 Facebook 바로가기</a>
             </div>
         </div>
 
@@ -87,6 +90,7 @@
     var view_cnt =  <%-JSON.stringify(view_cnt)%>;
     var video_cnt =  <%-JSON.stringify(video_cnt)%>;
     var fb_sub_cnt =  <%-JSON.stringify(fb_sub_cnt)%>;
+    var fb_post_cnt =  <%-JSON.stringify(fb_post_cnt)%>;
 </script>
 
 </body>

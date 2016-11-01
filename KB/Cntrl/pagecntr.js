@@ -40,6 +40,10 @@ exports.donor = function(req,res,callback){
     res.render('../views/donor.html');
 }
 
+exports.location = function(req,res,callback){
+    res.render('../views/location.html');
+}
+
 exports.etc_contact = function (req,res,callback){
     res.render('../views/etc_contact.html');
 }
@@ -55,8 +59,10 @@ var queryOptions = {
 var fb_graph = require('fbgraph');
 fb_graph.setAccessToken('1606945842934576|ac7afc97c9d7f46b91751e03271a0585');
 var fb_sub_cnt = 0;
-fb_graph.get("yonkotv?fields=fan_count", function(err, res, callback) {
+var fb_post_cnt = 0;
+fb_graph.get("yonkotv?fields=fan_count,posts", function(err, res, callback) {
     fb_sub_cnt = res.fan_count;
+    fb_post_cnt = res.posts.data.length;
 });
 
 
@@ -81,7 +87,7 @@ exports.channel = function(req,res,callback){
         //});
 
 
-        res.render('../views/channel.html',{sub_cnt: sub_cnt, view_cnt : view_cnt, video_cnt : video_cnt, fb_sub_cnt : fb_sub_cnt});
+        res.render('../views/channel.html',{sub_cnt: sub_cnt, view_cnt : view_cnt, video_cnt : video_cnt, fb_sub_cnt : fb_sub_cnt, fb_post_cnt : fb_post_cnt});
     });
 
 }
