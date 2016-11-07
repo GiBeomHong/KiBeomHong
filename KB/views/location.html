@@ -6,6 +6,8 @@
     <title>연고티비 - 위치</title>
 
 
+
+
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <% include ../public/common/meta_data %>
@@ -17,6 +19,8 @@
     <link rel="stylesheet" href="css/nivo_themes/default/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=gfJZL2Usm4tB_yWqTa3V"></script>
 
 </head>
 
@@ -31,23 +35,26 @@
 
 
 <!-- gallery section -->
-<section id="gallery" class="parallax-section">
-    <div class="container">
 
+<section id="gallery" class="parallax-section" >
 
-    </div>
 </section>
 
 <section id="gallery" class="parallax-section" style="padding-top: 1px;">
     <div class="container">
-        <div class="row">
             <div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
                 <h1 class="heading">위치</h1>
                 <hr>
             </div>
-        </div>
     </div>
+</section>
 
+<section id="gallery" class="parallax-section" >
+    <div class="container">
+
+        <div id="map" style="width:100%;height:400px;"></div>
+
+    </div>
 </section>
 
 
@@ -62,7 +69,68 @@
 <!--<script src="test_js/nivo-lightbox.min.js"></script>-->
 <script src="test_js/wow.min.js"></script>
 <script src="test_js/custom.js"></script>
+<script>
+    var mapOptions = {
+        center: new naver.maps.LatLng(37.579119037, 126.8902940126),
+        zoom: 10,
+        zoomControl: true, //줌 컨트롤의 표시 여부
+        zoomControlOptions: { //줌 컨트롤의 옵션
+            position: naver.maps.Position.TOP_RIGHT
+        },
+        disableKineticPan : false
+    };
 
+    var map = new naver.maps.Map('map', mapOptions);
+
+
+    var HOME_PATH = window.HOME_PATH || '.';
+    var position = new naver.maps.LatLng(37.579119037, 126.8902940126);
+
+    var markerOptions = {
+        position: position,
+        map: map,
+        icon: {
+            url: HOME_PATH +'/img/example/pin_default.png',
+            size: new naver.maps.Size(22, 35),
+            origin: new naver.maps.Point(0, 0),
+            anchor: new naver.maps.Point(11, 35)
+        },
+        shadow: {
+            url: HOME_PATH +'/img/example/shadow-pin_default.png',
+            size: new naver.maps.Size(40, 35),
+            origin: new naver.maps.Point(0, 0),
+            anchor: new naver.maps.Point(11, 35)
+        }
+    };
+
+    var marker = new naver.maps.Marker(markerOptions);
+
+    var contentString = [
+        '<div class="iw_inner">',
+        '   <h3>연고티비</h3>',
+        '   <p>서울 마포구 상암동 1605 누리꿈스퀘어 연구개발타워 6층 혁신벤처센터 606호<br />',
+        '       <img src="'+ HOME_PATH +'/images/yglogo.png" style="width:auto; height: auto;" alt="연고티비" class="thumb" /><br />',
+        '       연락처 : 010-9082-2272<br />',
+        '       <a href="http://www.yonkotv.com" target="_blank">www.yonkotv.com</a>',
+        '   </p>',
+        '</div>'
+    ].join('');
+
+    var infowindow = new naver.maps.InfoWindow({
+        content: contentString
+    });
+
+    naver.maps.Event.addListener(marker, "click", function(e) {
+        if (infowindow.getMap()) {
+            infowindow.close();
+        } else {
+            infowindow.open(map, marker);
+        }
+    });
+
+    infowindow.open(map, marker);
+
+</script>
 
 
 
