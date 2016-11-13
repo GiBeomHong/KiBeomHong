@@ -60,9 +60,11 @@ app.all('/reply',Pagecntr.reply);
 app.all('/donor',Pagecntr.donor);
 app.all('/channel',Pagecntr.channel);
 app.all('/etc_contact',Pagecntr.etc_contact);
+app.all('/ad_contact',Pagecntr.ad_contact);
 app.all('/location',Pagecntr.location)
 
 app.all('/contact',contact.contact);
+app.all('/adcontact',contact.ad_contact);
 
 //app.all('/testfb',testfb.test_fb);
 //app.all('/test',youtube_api.youtube_api);

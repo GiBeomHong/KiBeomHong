@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>광고 문의</title>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <% include ../public/common/meta_data %>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/nivo_themes/default/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+
+</head>
+
+
+
+
+
+<body>
+
+<% include ../public/common/header %>
+
+
+
+<!-- gallery section -->
+<section id="gallery" class="parallax-section">
+    <div class="container">
+
+    </div>
+</section>
+
+<form method="post" action="/adcontact" >
+<section id="gallery" class="parallax-section" style="padding-top: 1px;">
+    <div class="container">
+            <h1 class="heading" style="border-bottom: 3px solid black">문의작성</h1>
+            <mark>* 필수입력</mark>
+    </div>
+    <div class="container" style="padding-top: 10px; border-bottom: 1px solid lightgrey">
+        <!-- <dd>의 input 부분 컴퓨터상에서만 광고 문의 한다는 전제 하에 (diatv도 동일) 반응형으로 제작 안함,
+        반응형 하려면 dd의 width속성 제거하고 input 박스 사이즈 조정하면 됨-->
+
+        <dl>
+            <dt>회사명<mark style="float: initial">*</mark></dt>
+            <dd>
+                <span>
+                    <input style="width:100%; height: 35px;" id="company" name="company" type="text" required="required">
+                </span>
+            </dd>
+
+            <dt>홈페이지</dt>
+            <dd>
+                <span>
+                    <input style="width:100%; height: 35px;" id="homepage" name="homepage">
+                </span>
+            </dd>
+
+            <dt>이름<mark style="float: initial">*</mark></dt>
+            <dd style="width:300px; padding-right: 40px;">
+                <span>
+                    <input style="width:100%; height: 35px;" id="name" name="name" type="text" required="required">
+                </span>
+            </dd>
+
+            <dt style="width: inherit; padding-right: 40px;">E-Mail<mark style="float: initial">*</mark></dt>
+            <dd style="width:408px; padding-right: 40px;">
+                <span>
+                    <input style="width:100%; height: 35px;" id="email" name="email" type="text" required="required">
+                </span>
+            </dd>
+
+            <dt>전화번호<mark style="float: initial">*</mark></dt>
+            <dd>
+                <span>
+                    <input style="width:100%; height: 35px;" id="phone" name="phone" type="text" required="required">
+                </span>
+            </dd>
+
+            <dt>제목<mark style="float: initial">*</mark></dt>
+            <dd>
+                <span>
+                    <input style="width:100%; height: 35px;" id="title" name="title" type="text" required="required">
+                </span>
+            </dd>
+
+            <dt>내용<mark style="float: initial">*</mark></dt>
+            <dd>
+                <span style="height:200px;">
+                    <textarea col="50" row="20" required="required" id="context" name="context" style="width: 100%; height:200px"></textarea>
+                </span>
+            </dd>
+
+            <dt style="padding-top: 180px;">첨부파일</dt>
+            <dd style="padding-top: 180px; height: auto; padding-bottom:10px;">
+
+                <span>
+                    <!--<input style="width:100%; height: 35px;">-->
+                    <!--<stong>찾아보기</stong>-->
+                    <input multiple="multiple" type="file" data-title="찾아보기" id="filename" accept=".pdf,.doc,.docx,.ppt,.pptx,.hwp" name="filename[]">
+                </span>
+                <br>
+                <em>
+                    "첨부파일의 최대 크기는 5MB 입니다."
+                    <br>
+                    "(파일형식 : pdf, doc, docx, ppt, pptx)"
+                </em>
+            </dd>
+
+        </dl>
+
+    </div>
+    <div class="container" style="padding-top: 5px;">
+        <button type="submit" > 버튼뿅!</button>
+    <div>
+</section>
+</form>
+
+<% include ../public/common/footer %>
+
+<!-- JAVASCRIPT JS FILES -->
+<script src="test_js/jquery.js"></script>
+<script src="test_js/bootstrap.min.js"></script>
+<script src="test_js/jquery.parallax.js"></script>
+<script src="test_js/smoothscroll.js"></script>
+<!--<script src="test_js/nivo-lightbox.min.js"></script>-->
+<script src="test_js/wow.min.js"></script>
+<script src="test_js/custom.js"></script>
+
+<script>
+
+
+</script>
+
+</body>
+</html>
