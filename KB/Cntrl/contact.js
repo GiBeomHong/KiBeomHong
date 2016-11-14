@@ -45,6 +45,15 @@ exports.contact = function(req,res,callback){
 
 }
 
+exports.ad_contact = function (req,res,callback) {
+    var name = req.body.name;
+
+
+    console.log("name is " + name);
+    console.log(req.body.toJSON);
+
+}
+
 
 
 

@@ -48,6 +48,10 @@ exports.etc_contact = function (req,res,callback){
     res.render('../views/etc_contact.html');
 }
 
+exports.ad_contact = function (req,res,callback){
+    res.render('../views/ad_contact.html');
+}
+
 // youtube_api 사용 //
 var google = require('googleapis');
 var youtube = google.youtube({version: 'v3', auth: "AIzaSyDYDWpSuUV7LGBjiQWMcTFhKitMX9TG_6c"});
@@ -56,6 +60,7 @@ var queryOptions = {
     'maxResults': 5,
     'id': 'UCelPbnoAuzgRDFJAsJ4Du7A'
 };
+/*
 var fb_graph = require('fbgraph');
 fb_graph.setAccessToken('1606945842934576|ac7afc97c9d7f46b91751e03271a0585');
 var fb_sub_cnt = 0;
@@ -64,10 +69,25 @@ fb_graph.get("yonkotv?fields=fan_count,posts", function(err, res, callback) {
     fb_sub_cnt = res.fan_count;
     fb_post_cnt = res.posts.data.length;
 });
-
+*/
 
 exports.channel = function(req,res,callback){
 
+    var fb_graph = require('fbgraph');
+    fb_graph.setAccessToken('1606945842934576|ac7afc97c9d7f46b91751e03271a0585');
+    var fb_sub_cnt = 0;
+    var fb_post_cnt = 0;
+
+    fb_graph.get("yonkotv?fields=fan_count,posts", function(err, res, callback) {
+        if(!!res.fan_count){
+            fb_sub_cnt = res.fan_count;
+        }
+        else
+        {
+            fb_sub_cnt = "open api 이용횟수 초과 error";
+        }
+        fb_post_cnt = res.posts.data.length;
+    });
 
     /* youtube api 사용 */
     youtube.channels.list(queryOptions, function (err, data) {
