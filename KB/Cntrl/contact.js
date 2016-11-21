@@ -2,13 +2,15 @@
  * Created by GiBeomHong on 2016. 8. 18..
  */
 var nodemailer = require('nodemailer');
+var fs = require('fs');
 var smtpTransport = nodemailer.createTransport("SMTP", {
     service: 'Gmail',
     auth: {
         user: 'yonkotv.contact',
-        pass: 'yonkotv0626'
+        pass: 'dusrhxlql0626'//연고티비0626
     }
 });
+
 
 exports.contact = function(req,res,callback){
     var name = req.body.name;
@@ -20,12 +22,12 @@ exports.contact = function(req,res,callback){
     var mailOptions = {
         from: name + ' <' +  email +  '>',
         to: 'yonkotv.contact@gmail.com',
-        subject:'[기타문의]'+ name+ ' 님의 문의 메일 입니다.' ,
+        subject:'[기타문의]'+ name+ ' 님의 기타문의 메일 입니다.' ,
         text: msg
     };
 
 
-    console.log(mailOptions);
+    //console.log(mailOptions);
 
 
     smtpTransport.sendMail(mailOptions, function(error, response){
@@ -46,11 +48,44 @@ exports.contact = function(req,res,callback){
 }
 
 exports.ad_contact = function (req,res,callback) {
+
     var name = req.body.name;
+    var email = req.body.email;
+    var company = req.body.company;
+    var homepage = req.body.homepage;
+    var phone = req.body.phone;
+    var title = req.body.title;
+    var message = req.body.context;
 
 
-    console.log("name is " + name);
-    console.log(req.body.toJSON);
+    var msg = "제목 :  " + title + " \n"
+        +" \n"+message +" \n"+" \n" + "[광고 문의자] \n" + " 이름 : " + name + "\n email : " +  email +  "\n 회사 : " + company +" (회사 홈페이지 : "+ homepage +")" +"\n 연락처 : " + phone +"\n";
+
+    var mailOptions = {
+        from: name + ' < ' +  email +  ' >',
+        to: 'yonkotv.contact@gmail.com',
+        subject:'[광고문의]'+ name+ ' 님의 광고문의 메일 입니다.' ,
+        text: msg
+    };
+
+
+    //console.log(mailOptions);
+
+
+    smtpTransport.sendMail(mailOptions, function(error, response){
+
+        if (error){
+            console.log(error);
+        } else {
+            console.log("Message sent : " + response.message);
+        }
+        smtpTransport.close();
+    });
+
+
+
+
+    res.redirect('/ad_contact');
 
 }
 
