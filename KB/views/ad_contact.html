@@ -40,7 +40,7 @@
 <form method="post" action="/adcontact">
 <section id="gallery" class="parallax-section" style="padding-top: 1px;">
     <div class="container">
-            <h1 class="heading" style="border-bottom: 3px solid black">문의작성</h1>
+            <h1 class="heading" style="border-bottom: 3px solid black">광고 문의 작성</h1>
             <mark>* 필수입력</mark>
     </div>
     <div class="container" style="padding-top: 10px; border-bottom: 1px solid lightgrey">
@@ -97,32 +97,31 @@
                 </span>
             </dd>
 
-            <dt style="padding-top: 180px;">첨부파일</dt>
+            <!--<dt style="padding-top: 180px;">첨부파일</dt>-->
             <dd style="padding-top: 180px; height: auto; padding-bottom:10px;">
 
-                <span>
-                    <!--<input style="width:100%; height: 35px;">-->
-                    <!--<stong>찾아보기</stong>-->
+                <!--<span>-->
+                    <!--&lt;!&ndash;<input style="width:100%; height: 35px;">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<stong>찾아보기</stong>&ndash;&gt;-->
 
-                    <input multiple="multiple" type="file" data-title="찾아보기" id="filename" accept=".pdf,.doc,.docx,.ppt,.pptx,.hwp" name="filename">
-                           <!--onchange="this.select();-->
-                           <!--document.getElementById('real_path').value=document.selection.createRange().text.toString();">-->
-                    <!--<input type="hidden" id="real_path" name="real_path" value="" />-->
-                    <!--그냥 이 부분 ajax 로 해야할듯 -->
-                </span>
-                <br>
-                <em>
-                    "첨부파일의 최대 크기는 5MB 입니다."
-                    <br>
-                    "(파일형식 : pdf, doc, docx, ppt, pptx)"
-                </em>
+
+                    <!--<input multiple="multiple" type="file" data-title="찾아보기" id="filename" accept=".pdf,.doc,.docx,.ppt,.pptx,.hwp" name="uploadfile" onclick="onclick()">-->
+                           <!--&lt;!&ndash;onchange="this.select();&ndash;&gt;-->
+                           <!--&lt;!&ndash;document.getElementById('real_path').value=document.selection.createRange().text.toString();">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<input type="hidden" id="real_path" name="real_path" value="" />&ndash;&gt;-->
+                    <!--&lt;!&ndash;그냥 이 부분 ajax 로 해야할듯 &ndash;&gt;-->
+                <!--</span>-->
+                <!--<br>-->
+                <p>
+                    첨부파일은 <a href="mailto:yonkotv.contact@gmail.com">yonkotv.contact@gamil.com</a> 으로 보내주시기 바랍니다.
+                </p>
             </dd>
 
         </dl>
 
     </div>
-    <div class="container" style="padding-top: 5px;">
-        <button type="submit" > 버튼뿅!</button>
+    <div class="container" style="padding-top: 5px; width:140px;">
+        <button type="submit" onclick="adcheck()"> 작성완료 </button>
     <div>
 </section>
 </form>
@@ -137,9 +136,10 @@
 <!--<script src="test_js/nivo-lightbox.min.js"></script>-->
 <script src="test_js/wow.min.js"></script>
 <script src="test_js/custom.js"></script>
-
 <script>
-
+    function adcheck(){
+        alert("광고 접수가 완료되었습니다");
+    }
 
 </script>
 
