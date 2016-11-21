@@ -37,7 +37,7 @@
     </div>
 </section>
 
-<form method="post" action="/adcontact" >
+<form method="post" action="/adcontact">
 <section id="gallery" class="parallax-section" style="padding-top: 1px;">
     <div class="container">
             <h1 class="heading" style="border-bottom: 3px solid black">문의작성</h1>
@@ -103,7 +103,12 @@
                 <span>
                     <!--<input style="width:100%; height: 35px;">-->
                     <!--<stong>찾아보기</stong>-->
-                    <input multiple="multiple" type="file" data-title="찾아보기" id="filename" accept=".pdf,.doc,.docx,.ppt,.pptx,.hwp" name="filename[]">
+
+                    <input multiple="multiple" type="file" data-title="찾아보기" id="filename" accept=".pdf,.doc,.docx,.ppt,.pptx,.hwp" name="filename">
+                           <!--onchange="this.select();-->
+                           <!--document.getElementById('real_path').value=document.selection.createRange().text.toString();">-->
+                    <!--<input type="hidden" id="real_path" name="real_path" value="" />-->
+                    <!--그냥 이 부분 ajax 로 해야할듯 -->
                 </span>
                 <br>
                 <em>

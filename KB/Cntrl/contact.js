@@ -2,6 +2,7 @@
  * Created by GiBeomHong on 2016. 8. 18..
  */
 var nodemailer = require('nodemailer');
+var fs = require('fs');
 var smtpTransport = nodemailer.createTransport("SMTP", {
     service: 'Gmail',
     auth: {
@@ -47,10 +48,11 @@ exports.contact = function(req,res,callback){
 
 exports.ad_contact = function (req,res,callback) {
     var name = req.body.name;
-
+    var length = req.body.filename.length;
+    var uploadfile;
 
     console.log("name is " + name);
-    console.log(req.body.toJSON);
+    console.log(req.body.real_path);
 
 }
 
