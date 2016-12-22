@@ -111,3 +111,24 @@ exports.channel = function(req,res,callback){
     });
 
 }
+
+
+exports.mainpage = function(req,res,callback){
+
+
+    /* youtube api 사용 */
+    youtube.channels.list(queryOptions, function (err, data) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+
+        var sub_cnt = data.items[0].statistics.subscriberCount;
+        var view_cnt = data.items[0].statistics.viewCount;
+        var video_cnt = data.items[0].statistics.videoCount;
+
+
+        res.render('../views/main.html',{sub_cnt: sub_cnt, view_cnt : view_cnt, video_cnt : video_cnt});
+    });
+
+}
