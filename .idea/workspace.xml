@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2b21588-b9ff-48c6-8eb1-d9c958fc7de7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KB/public/common/main_header.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KB/public/common/header.ejs" afterPath="$PROJECT_DIR$/KB/public/common/header.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KB/public/css/style.css" afterPath="$PROJECT_DIR$/KB/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KB/views/main.html" afterPath="$PROJECT_DIR$/KB/views/main.html" />
-    </list>
+    <list default="true" id="e2b21588-b9ff-48c6-8eb1-d9c958fc7de7" name="Default" comment="" />
     <ignored path="yonkotv.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/KB/public/common/header.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-7.8333335">
-              <caret line="18" column="94" selection-start-line="18" selection-start-column="94" selection-end-line="18" selection-end-column="94" />
+              <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#section#1;n#!!top" expanded="true" />
               </folding>
@@ -806,7 +800,7 @@
     <entry file="file://$PROJECT_DIR$/KB/public/common/header.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8333335">
-          <caret line="18" column="94" selection-start-line="18" selection-start-column="94" selection-end-line="18" selection-end-column="94" />
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
           <folding>
             <element signature="n#style#0;n#section#1;n#!!top" expanded="true" />
           </folding>
