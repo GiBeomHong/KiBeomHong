@@ -160,11 +160,24 @@ hr {
 }
 
 #home h1 {
+  font-size: 50px;
+  letter-spacing: 8px;
+  font-style: normal;
+  padding-top: 10px;
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+  font-family: 'Jeju Gothic', serif;
+}
+
+#home h3 {
   font-size: 20px;
   letter-spacing: 8px;
   font-style: normal;
   padding-top: 10px;
+  font-color : gray;
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+  font-family: 'Noto Sans KR', sans-serif;
 }
+
 #home .btn {
   background: transparent;
   border-radius: 0;
@@ -262,8 +275,8 @@ hr {
 
 /* gallery section */
 #channel {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 #channel .col-md-4 {
   padding-top: 52px;
@@ -280,6 +293,19 @@ hr {
 #channel h3 {
   font-size: 18px;
   line-height: 8px;
+}
+#channel h2 {
+  font-size: 20px;
+  line-height: 8px;
+  margin-left: 16px;
+  width:200px;
+}
+#channel a {
+  color:black;
+}
+
+#channel a:hover {
+  color:red;
 }
 
 /* contact section */

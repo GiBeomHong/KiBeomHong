@@ -4,9 +4,9 @@
 
 var request = require('request');
 
-exports.mainpage = function(req,res,callback){
-    res.render('../views/main.html');
-}
+//exports.mainpage = function(req,res,callback){
+//    res.render('../views/main.html');
+//}
 
 exports.temp_parser = function(req,res,callback){
     res.render('../views/temp_parser.html');

@@ -50,7 +50,7 @@
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
                 </ol>
                 <!--페이지-->
 
@@ -58,10 +58,11 @@
                     <!--슬라이드1-->
                     <div class="item active">
                         <img src="images/tempbg1.jpg" style="width:100%; height:auto" alt="First slide">
+                        <!--1440x752-->
                         <div class="container">
                             <div class="carousel-caption" style="height:auto">
-                                <!--<h1>가치 있는 CONTENTS, 꿈 꾸는 내일!</h1>-->
-                                <!--<p> 연고 TV </p>-->
+                                <h1>가치 있는 CONTENTS, 꿈 꾸는 내일!</h1>
+                                <p> 연고 TV </p>
                             </div>
                         </div>
                     </div>
@@ -104,15 +105,16 @@
         <div class="row">
             <div class="col-md-12 col-sm-12">
                 <br><br><br>
-                <h1  style="color: black ;">가치있는 Contents! 꿈꾸는 내일! </h1>
+                <h1  style="color: black ;">About US</h1>
                 <h2 style="color: black;" >연 고 T V  <!--&amp; --></h2>
-                <h1  style="color: black ;"> 여기에 내용 채워야함 </h1>
-                <h1  style="color: black ;"> 여기에 내용 채워야함 </h1>
-                <h1  style="color: black ;"> 여기에 내용 채워야함 </h1>
-                <h1  style="color: black ;"> 여기에 내용 채워야함 </h1>
-                <h1  style="color: black ;"> 여기에 내용 채워야함 </h1>
-                <h1  style="color: black ;"> 여기에 내용 채워야함 </h1>
-                <h1  style="color: black ;"> 여기에 내용 채워야함 </h1>
+                <h3  style="color: black ;"> 여기에 내용 채워야함 </h3>
+                <h3  style="color: black ;"> 여기에 내용 채워야함 </h3>
+                <h3  style="color: black ;"> 여기에 내용 채워야함 </h3>
+                <h3  style="color: black ;"> 여기에 내용 채워야함 </h3>
+                <h3  style="color: black ;"> 여기에 내용 채워야함 </h3>
+                <h3  style="color: black ;"> 여기에 내용 채워야함 </h3>
+                <h3  style="color: black ;"> 여기에 내용 채워야함 </h3>
+                <br>
             </div>
         </div>
     </div>
@@ -122,26 +124,10 @@
 <section id="channel" class="parallax-section" style="background: #f0f0f0;">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-sm-4 wow fadeInUp" data-wow-delay="0.3s" style="padding-top: 20px;">
-                <i class="fa fa-youtube fa-5x" aria-hidden="true" a href="https://www.youtube.com/channel/UCelPbnoAuzgRDFJAsJ4Du7A"></i><br><br>
-                <div class="col-md-3 col-sm-3">
-                    <div class="row">
-                        <div class="col s12 m7">
-                            <div>
-                                <div>
-                                    <h3 style="font-family:'BM JUA_OTF';vertical-align: middle; font-size : 60px; margin-top : 1px; margin-left:16px;">
-                                        <%=sub_cnt %>
-                                    </h3>
-                                </div>
-                                <div>
-                                    <span>
-                                        TOTAL FOLLOWS
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-3 col-sm-4 wow fadeInUp" data-wow-delay="0.3s" style="padding-top: 20px;">
+                <a href="https://www.youtube.com/channel/UCelPbnoAuzgRDFJAsJ4Du7A" target="_blank"><i class="fa fa-youtube fa-5x" aria-hidden="true"></i></a><br><br>
+            </div>
+            <div class="col-md-3 col-sm-4 wow fadeInUp" data-wow-delay="0.3s" style="padding-top: 40px;">
                 <div class="col-md-3 col-sm-3">
                     <div class="row">
                         <div class="col s12 m7">
@@ -149,13 +135,29 @@
                                 <h3 style="font-family:'BM JUA_OTF';vertical-align: middle; font-size : 60px; margin-top : 1px; margin-left:16px;">
                                     <%=view_cnt %>
                                 </h3>
-                                <span>
-                                    TOTAL VIEWS
-                                </span>
+                                <br>
+                                <h2>TOTAL VIEWS</h2>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-3 col-sm-4 wow fadeInUp" data-wow-delay="0.3s" style="padding-top: 40px;">
+                <div class="col-md-3 col-sm-3">
+                    <div class="row">
+                        <div class="col s12 m7">
+                            <div>
+                                <h3 style="font-family:'BM JUA_OTF';vertical-align: middle; font-size : 60px; margin-top : 1px; margin-left:16px;">
+                                    <%=sub_cnt %>
+                                </h3>
+                                <br>
+                                <h2>TOTAL SUB</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 wow fadeInUp" data-wow-delay="0.3s" style="padding-top: 40px;">
                 <div class="col-md-3 col-sm-3">
                     <div class="row">
                         <div class="col s12 m7">
@@ -163,14 +165,12 @@
                                 <h3 style="font-family:'BM JUA_OTF';vertical-align: middle; font-size : 60px; margin-top : 1px; margin-left:16px;">
                                     <%=video_cnt %>
                                 </h3>
-                                <span>
-                                    VIDEOS
-                                </span>
+                                <br>
+                                <h2>VIDEOS</h2>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 </section>
