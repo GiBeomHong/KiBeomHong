@@ -22,7 +22,6 @@ $(function(){
     $('#menu').parallax("100%", 0.2);
     $('#team').parallax("100%", 0.3);
     $('#contact').parallax("100%", 0.1);
-
   }
   initParallax();
 

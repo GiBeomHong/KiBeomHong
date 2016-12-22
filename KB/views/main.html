@@ -33,6 +33,7 @@
     <!--<link rel="stylesheet" href="../src/css/bootstrap.min.css">-->
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="test_js/owl.carousel/dist/assets/owl.carousel.min.css" />
 
     <link rel="stylesheet" href="lightbox/lity.css">
 
@@ -61,8 +62,8 @@
                         <!--1440x752-->
                         <div class="container">
                             <div class="carousel-caption" style="height:auto">
-                                <h1>가치 있는 CONTENTS, 꿈 꾸는 내일!</h1>
-                                <p> 연고 TV </p>
+                                <!--<h1>가치 있는 CONTENTS, 꿈 꾸는 내일!</h1>-->
+                                <!--<p> 연고 TV </p>-->
                             </div>
                         </div>
                     </div>
@@ -70,7 +71,8 @@
 
                     <!--슬라이드2-->
                     <div class="item">
-                        <a href="https://www.ycrowdy.com/cf/campaign/ue5zS17sMg" target="_blank"><img src="images/tempbg1.jpg" style="width:100%; height:auto; overflow:hidden" data-src="" alt="Second slide"></a>
+                        <!--<a href="https://www.ycrowdy.com/cf/campaign/ue5zS17sMg" target="_blank"></a>-->
+                        <img src="images/tempbg2.jpg" style="width:100%; height:auto; overflow:hidden" data-src="" alt="Second slide">
                         <div class="container">
                             <div class="carousel-caption">
                                 <!--<h1>가치 있는 CONTENTS, 꿈 꾸는 내일!</h1>-->
@@ -105,16 +107,21 @@
         <div class="row">
             <div class="col-md-12 col-sm-12">
                 <br><br><br>
-                <h1  style="color: black ;">About US</h1>
-                <h2 style="color: black;" >연 고 T V  <!--&amp; --></h2>
-                <h3  style="color: black ;"> 여기에 내용 채워야함 </h3>
-                <h3  style="color: black ;"> 여기에 내용 채워야함 </h3>
-                <h3  style="color: black ;"> 여기에 내용 채워야함 </h3>
-                <h3  style="color: black ;"> 여기에 내용 채워야함 </h3>
-                <h3  style="color: black ;"> 여기에 내용 채워야함 </h3>
-                <h3  style="color: black ;"> 여기에 내용 채워야함 </h3>
-                <h3  style="color: black ;"> 여기에 내용 채워야함 </h3>
+                <h1  style="color: black ;">유익한 Contents &nbsp; 건강한 Contents</h1>
                 <br>
+                <h3 > 연고티비는 연세대학교와 고려대학교 학생들이 함께 유익하고 건강한 컨텐츠를 만들어가는 채널입니다.
+                     컨텐츠들은 유튜브를 기반으로, 페이스북, 인스타그램, 네이버 블로그를 통해 제공되고 있습니다.
+                    교육적이면서 재미있는 가치를 추구하는 연고티비의 Edu-tainment 컨텐츠들은 고등학생 및 수험생을 중심으로 시청자층을 확대해나가고 있습니다.
+                    연고티비의 다양한 Original Content들과 Native Ad를 포함한 Branded Content들을 만나보세요!
+                </h3>
+                <br>
+                <div class="row" style="padding-bottom: 30px;">
+                    <div class="col-md-5 col-sm-4 wow fadeInUp">
+                        <img src="images/temp_ab1.jpg">
+                    </div>
+                    <div class="col-md-5 col-sm-4 wow fadeInUp">
+                        <img src="images/temp_ab2.jpg">
+                    </div>
             </div>
         </div>
     </div>
@@ -175,11 +182,35 @@
         </div>
 </section>
 
+<section id = "gallery" class = "parallax-section">
+    <div class="container">
+        <div class="row">
+            <h1  style="color: black ;">Fan</h1>
+            <h1  style="color: black ;">연혁</h1>
+        </div>
+    </div>
+</section>
 
+<section id = "history" class = "parallax-section">
+    <div class="container">
+        <div class="row">
+            <div class="owl-carousel owl-theme owl-loaded" data-items="4" data-pagination="no">
+                <div> A </div>
+                <div> B </div>
+                <div> C </div>
+                <div> D </div>
+                <div> E </div>
+                <div> F </div>
+                <div> G </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
 <!-- gallery section -->
+<!--
 <section id="gallery" class="parallax-section">
     <div class="container">
         <div class="row">
@@ -232,7 +263,7 @@
         </div>
     </div>
 </section>
-
+ -->
 
 <!-- contact section -->
 <!--
@@ -265,9 +296,11 @@
 </section>
 
 
-<% include ../public/common/footer %>
+
 
 <!-- JAVASCRIPT JS FILES -->
+
+<% include ../public/common/new_footer %>
 <script src="test_js/jquery.js"></script>
 <script src="test_js/bootstrap.min.js"></script>
 <script src="test_js/jquery.parallax.js"></script>
@@ -294,6 +327,16 @@
 <script src="lightbox/lity.js"></script>
 <script src="lightbox/prism.js"></script>
 
+<!--<script src="test_js/jquery/dist/jquery.js"></script>-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel(
+                {items:4, loop:true, autoplay:true,
+                }
+        );
+    });
+</script>
+<script src="test_js/owl.carousel/dist/owl.carousel.min.js"></script>
 
 </body>
 </html>
