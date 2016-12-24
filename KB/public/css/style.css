@@ -142,11 +142,10 @@ hr {
 }
 
 #home img{
-  /*background: url('../images/home_bg3.jpg') 50% 0 repeat-y fixed;*/
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
-  color: #ffffff;
+  /*color: #ffffff;*/
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -155,27 +154,37 @@ hr {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 63vh;
+  /*height: 63vh;*/
+  padding-bottom: 15px;
   text-align: center;
 }
 
 #home h1 {
-  font-size: 50px;
+  font-size: 30px;
   letter-spacing: 8px;
   font-style: normal;
+  font-weight: bold;
   padding-top: 10px;
-@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
-  font-family: 'Jeju Gothic', serif;
+  font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;
 }
 
-#home h3 {
+#home h2 {
   font-size: 20px;
   letter-spacing: 8px;
   font-style: normal;
+  font-weight: bold;
   padding-top: 10px;
-  font-color : gray;
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;
+}
+
+#home h3 {
+  font-size: 17px;
+  letter-spacing: 3px;
+  font-style: normal;
+  padding-top: 10px;
+  color : grey;
+@import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
+  font-family:'Noto Sans Korean';
 }
 
 #home .btn {
@@ -254,7 +263,8 @@ hr {
 /* gallery section */
 #gallery {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 #gallery .col-md-4 {
   padding-top: 52px;
@@ -270,10 +280,74 @@ hr {
 }
 #gallery h3 {
   font-size: 18px;
+  /*line-height: 8px;*/
+}
+#gallery h2 {
+  font-size: 30px;
+  letter-spacing: 8px;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 10px;
+  font-family: 'BM JUA_OTF';
+}
+#gallery h1 {
+  font-size: 30px;
+  letter-spacing: 8px;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 10px;
+  font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;
+}
+
+/* history section */
+#history {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background : rgba(240, 240, 240, 0.16);
+}
+#history .col-md-4 {
+  padding-top: 52px;
+}
+#history img {
+  width: 100%;
+  padding-bottom: 18px;
+}
+#history .col-md-4 div {
+  position: relative;
+  bottom: 18px;
+  padding-bottom: 12px;
+}
+#history h3 {
+  font-size: 18px;
   line-height: 8px;
 }
 
-/* gallery section */
+
+/* partner section */
+#partner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f0f0f0;
+}
+#partner .col-md-4 {
+  padding-top: 52px;
+}
+#partner img {
+  width: 100%;
+  padding-bottom: 18px;
+}
+#partner .col-md-4 div {
+  position: relative;
+  bottom: 18px;
+  padding-bottom: 12px;
+}
+#partner h3 {
+  font-size: 18px;
+  line-height: 8px;
+}
+
+
+/* channel section */
 #channel {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -351,8 +425,8 @@ footer {
   background-size: cover;
   background-position: center;
   color: #ffffff;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 footer h2 {
   padding-bottom: 14px;

@@ -62,6 +62,7 @@ app.all('/channel',Pagecntr.channel);
 app.all('/etc_contact',Pagecntr.etc_contact);
 app.all('/ad_contact',Pagecntr.ad_contact);
 app.all('/location',Pagecntr.location)
+app.all('/contact',Pagecntr.contact)
 
 app.all('/contact',contact.contact);
 app.all('/adcontact',contact.ad_contact);
