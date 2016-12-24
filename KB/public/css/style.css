@@ -290,6 +290,14 @@ hr {
   padding-top: 10px;
   font-family: 'BM JUA_OTF';
 }
+#gallery h1 {
+  font-size: 30px;
+  letter-spacing: 8px;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 10px;
+  font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;
+}
 
 /* history section */
 #history {
