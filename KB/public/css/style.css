@@ -155,6 +155,7 @@ hr {
   -ms-flex-align: center;
   align-items: center;
   /*height: 63vh;*/
+  padding-bottom: 15px;
   text-align: center;
 }
 
@@ -167,9 +168,18 @@ hr {
   font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;
 }
 
+#home h2 {
+  font-size: 20px;
+  letter-spacing: 8px;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 10px;
+  font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;
+}
+
 #home h3 {
   font-size: 17px;
-  letter-spacing: 8px;
+  letter-spacing: 3px;
   font-style: normal;
   padding-top: 10px;
   color : grey;
@@ -253,7 +263,8 @@ hr {
 /* gallery section */
 #gallery {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 #gallery .col-md-4 {
   padding-top: 52px;
@@ -269,14 +280,22 @@ hr {
 }
 #gallery h3 {
   font-size: 18px;
-  line-height: 8px;
+  /*line-height: 8px;*/
+}
+#gallery h2 {
+  font-size: 30px;
+  letter-spacing: 8px;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 10px;
+  font-family: 'BM JUA_OTF';
 }
 
 /* history section */
 #history {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #f0f0f0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background : rgba(240, 240, 240, 0.16);
 }
 #history .col-md-4 {
   padding-top: 52px;
@@ -291,6 +310,30 @@ hr {
   padding-bottom: 12px;
 }
 #history h3 {
+  font-size: 18px;
+  line-height: 8px;
+}
+
+
+/* partner section */
+#partner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f0f0f0;
+}
+#partner .col-md-4 {
+  padding-top: 52px;
+}
+#partner img {
+  width: 100%;
+  padding-bottom: 18px;
+}
+#partner .col-md-4 div {
+  position: relative;
+  bottom: 18px;
+  padding-bottom: 12px;
+}
+#partner h3 {
   font-size: 18px;
   line-height: 8px;
 }

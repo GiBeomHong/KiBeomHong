@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <% include ../public/common/meta_data %>
+    <!--
+
+    Template 2076 Zentro
+
+    http://www.tooplate.com/view/2076-zentro
+
+
+    -->
+    <!--<style>-->
+    <!--@media only screen and (min-width:768px) { a { padding-bottom:10px;}}-->
+    <!--</style>-->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="css/nivo-lightbox.css">-->
+    <!--<link rel="stylesheet" href="css/nivo_themes/default/default.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/GiBeom.css">-->
+    <!--<link rel="stylesheet" href="css/bootstrap-reponsive.css">-->
+    <!--<link rel="stylesheet" href="css/bootstrap-reponsive.min.css">-->
+    <!--<link rel="stylesheet" href="../src/css/bootstrap.min.css">-->
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="lightbox/lity.css">
+
+</head>
+<body>
+
+<% include ../public/common/header %>
+
+
+<!-- contact section -->
+<section id="contact" class="parallax-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10 col-sm-12 text-center">
+                <h1 class="heading">기타 문의</h1>
+                <p>불편한 사항이나 기타 문의사항을 보내주세요</p>
+                <hr>
+            </div>
+            <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeIn" data-wow-delay="0.9s">
+                <form action="/contact" method="post">
+                    <div class="col-md-6 col-sm-6">
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="col-md-12 col-sm-12">
+                        <textarea name="message" rows="8" class="form-control" id="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                        <input name="submit" type="submit" class="form-control" id="submit" value="Send" onclick="contact();">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-2 col-sm-1"></div>
+        </div>
+    </div>
+</section>
+
+
+<% include ../public/common/footer %>
+
+<!-- JAVASCRIPT JS FILES -->
+<script src="test_js/jquery.js"></script>
+<script src="test_js/bootstrap.min.js"></script>
+<script src="test_js/jquery.parallax.js"></script>
+<script src="test_js/smoothscroll.js"></script>
+<script src="test_js/nivo-lightbox.min.js"></script>
+<script src="test_js/wow.min.js"></script>
+<script src="test_js/custom.js"></script>
+
+
+<!-- light box js -->
+<script src="lightbox/jquery.js"></script>
+<script src="lightbox/lity.js"></script>
+<script src="lightbox/prism.js"></script>
+<script>
+    function contact(){
+        alert("문의 접수가 완료되었습니다");
+    }
+
+</script>
+
+</body>
+</html>

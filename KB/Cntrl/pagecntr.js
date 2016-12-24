@@ -36,6 +36,10 @@ exports.reply = function(req,res,callback){
     res.render('../views/reply.html');
 }
 
+exports.contact = function(req,res,callback){
+    res.render('../views/contact.html');
+}
+
 exports.donor = function(req,res,callback){
     res.render('../views/donor.html');
 }
