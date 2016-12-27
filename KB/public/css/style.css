@@ -609,3 +609,51 @@ footer .fa {
   line-height:inherit;
   /*font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;*/
 }
+
+/* staff section */
+#staff {
+  padding-top: 80px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+#staff .col-md-4 {
+  padding-top: 52px;
+}
+#staff img {
+  /*width: 100%;*/
+  /*padding-bottom: 18px;*/
+}
+#staff .col-md-4 div {
+  position: relative;
+  bottom: 18px;
+  padding-bottom: 12px;
+}
+#staff h3 {
+  font-size: 15px;
+  /*line-height: 8px;*/
+}
+#staff h2 {
+  font-size: 30px;
+  letter-spacing: 8px;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 10px;
+  font-family: 'BM JUA_OTF';
+}
+#staff h1 {
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 10px;
+  font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;
+}
+
+#staff h4 {
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-style: normal;
+  padding-top: 10px;
+  line-height:inherit;
+  /*font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;*/
+}

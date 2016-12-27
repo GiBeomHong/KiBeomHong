@@ -40,6 +40,10 @@ exports.life = function(req,res,callback){
     res.render('../views/life.html');
 }
 
+exports.branded = function(req,res,callback){
+    res.render('../views/branded.html');
+}
+
 exports.contact = function(req,res,callback){
     res.render('../views/contact.html');
 }
