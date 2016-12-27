@@ -33,7 +33,8 @@
     <!--<link rel="stylesheet" href="../src/css/bootstrap.min.css">-->
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=KNFmQINpGTiVAtmBHQAi"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=gfJZL2Usm4tB_yWqTa3V"></script>
+    <!--<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=KNFmQINpGTiVAtmBHQAi"></script>-->
 
     <link rel="stylesheet" href="lightbox/lity.css">
 
@@ -46,32 +47,44 @@
 <!-- contact section -->
 
 
-<section id="gallery" class="parallax-section">
+<section id="contact" class="parallax-section">
     <div class="container">
         <div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
             <h1 class="heading">Contact Us</h1>
             <hr>
         </div>
-        <div class="col-md-6 col-sm-3 wow fadeInUp" data-wow-delay="0.3s">
-            <!--<div id="map" style="width:100%;height:400px;"></div>-->
+        <div class="col-md-6 col-sm-3 wow fadeInUp" data-wow-delay="0.3s" style=" padding-top:70px;">
+            <div id="map" style="width:100%;height:440px;"></div>
         </div>
         <div class="col-md-5 col-sm-4 wow fadeInUp" data-wow-delay="0.3s" style="padding-left: 30px; padding-right: 30px;">
+            <h2 class="heading" style=" margin-top:25px;">About Us</h2>
+
+            <p><i class="fa fa-phone"></i> &nbsp;&nbsp;&nbsp;010-9082-2272 [ 대표 정 재 원 ]</p>
+            <p><i class="fa fa-map-marker"></i> &nbsp;&nbsp;&nbsp; 서울특별시 마포구 상암동 1605 누리꿈스퀘어, Seoul, KOREA</p>
+
             <h2 class="heading">Follow Us</h2>
             <ul class="social-icon">
                 <li><a href="https://www.facebook.com/yonkotv/?fref=ts" class="fa fa-facebook wow bounceIn" data-wow-delay="0.3s" target="_blank"></a></li>
+                <span>페이스북~ &nbsp; &nbsp;</span>
+                <br>
                 <li><a href="https://www.youtube.com/channel/UCelPbnoAuzgRDFJAsJ4Du7A" class="fa fa-youtube-play wow bounceIn" data-wow-delay="0.6s" target="_blank"></a></li>
+                <span>Youtube~</span>
+                <br>
                 <li><a href="https://www.instagram.com/yonkotv/" class="fa fa-instagram wow bounceIn" data-wow-delay="0.9s" target="_blank"></a></li>
+                <span>Instagram~</span>
+                <br>
                 <li><a href="http://blog.naver.com/yonkotv/" class="fa fa-bold wow bounceIn" data-wow-delay="0.9s" target="_blank"></a></li>
+                <span>Naver Blog~</span>
+                <br>
                 <!--<li><a href="#" class="fa fa-github wow bounceIn" data-wow-delay="0.9s"></a></li>-->
             </ul>
+
+            <h2 class="heading">Contact Us</h2>
+            <p>
+                광고 및 기타 문의는 <a href="mailto:company@yonkotv.com">company@yonkotv.com</a> 으로 보내주시기 바랍니다.
+            </p>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1> 여기에 follow us / main office (지도, 위치, 대표전화번호, 메일 (간단한 설명 + mail 기능), sub_office (위치)</h1>
+        <!--<h1> 여기에 follow us / main office (지도, 위치, 대표전화번호, 메일 (간단한 설명 + mail 기능), sub_office (위치)</h1>-->
     </div>
 </section>
 
@@ -135,16 +148,16 @@
 
     var marker = new naver.maps.Marker(markerOptions);
 
-    var contentString = [
-        '<div class="iw_inner">',
-        '   <h3>연고티비</h3>',
-        '   <p>서울 마포구 상암동 1605 누리꿈스퀘어 <br>연구개발타워 6층 혁신벤처센터 606호<br />',
-        '       <img src="'+ HOME_PATH +'/images/yglogo.png" style="width:auto; height: auto;" alt="연고티비" class="thumb" /><br />',
-        '       연락처 : 010-9082-2272<br />',
-        '       <a href="http://www.yonkotv.com" target="_blank">www.yonkotv.com</a>',
-        '   </p>',
-        '</div>'
-    ].join('');
+//    var contentString = [
+//        '<div class="iw_inner">',
+//        '   <h3>연고티비</h3>',
+//        '   <p>서울 마포구 상암동 1605 누리꿈스퀘어 <br>연구개발타워 6층 혁신벤처센터 606호<br />',
+//        '       <img src="'+ HOME_PATH +'/images/yglogo.png" style="width:auto; height: auto;" alt="연고티비" class="thumb" /><br />',
+//        '       연락처 : 010-9082-2272<br />',
+//        '       <a href="http://www.yonkotv.com" target="_blank">www.yonkotv.com</a>',
+//        '   </p>',
+//        '</div>'
+//    ].join('');
 
     var infowindow = new naver.maps.InfoWindow({
         content: contentString
