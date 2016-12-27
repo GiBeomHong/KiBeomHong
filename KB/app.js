@@ -52,7 +52,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/users', users);
 app.all('/',Pagecntr.mainpage);
 app.all('/4year',Pagecntr.year4);
-app.all('/past',Pagecntr.past);
+app.all('/origin',Pagecntr.origin_contents);
 app.all('/staff',Pagecntr.staff);
 app.all('/enroll',Pagecntr.enroll);
 app.all('/popup',Pagecntr.popup);

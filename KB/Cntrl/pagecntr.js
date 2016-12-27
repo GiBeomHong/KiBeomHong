@@ -16,8 +16,8 @@ exports.year4 = function(req,res,callback){
     res.render('../views/4year.html');
 }
 
-exports.past = function(req,res,callback){
-    res.render('../views/past_contents.html');
+exports.origin_contents = function(req,res,callback){
+    res.render('../views/Origin_contents.html');
 }
 
 exports.staff = function(req,res,callback){
