@@ -138,7 +138,7 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   height: inherit;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 #home img{
@@ -169,8 +169,8 @@ hr {
 }
 
 #home h2 {
-  font-size: 20px;
-  letter-spacing: 8px;
+  font-size: 30px;
+  letter-spacing: 1px;
   font-style: normal;
   font-weight: bold;
   padding-top: 10px;
@@ -179,12 +179,13 @@ hr {
 
 #home h3 {
   font-size: 17px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-style: normal;
   padding-top: 10px;
   color : grey;
 @import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
   font-family:'Noto Sans Korean';
+  line-height: 1.7;
 }
 
 #home .btn {
@@ -280,7 +281,7 @@ hr {
 }
 #gallery h3 {
   font-size: 18px;
-  /*line-height: 8px;*/
+  line-height: 30px;
 }
 #gallery h2 {
   font-size: 30px;
