@@ -61,8 +61,11 @@ app.all('/donor',Pagecntr.donor);
 app.all('/channel',Pagecntr.channel);
 app.all('/etc_contact',Pagecntr.etc_contact);
 app.all('/ad_contact',Pagecntr.ad_contact);
-app.all('/location',Pagecntr.location)
-app.all('/contact',Pagecntr.contact)
+app.all('/location',Pagecntr.location);
+app.all('/teacher',Pagecntr.teacher);
+app.all('/event',Pagecntr.event);
+app.all('/contact',Pagecntr.contact);
+app.all('/life',Pagecntr.life);
 
 app.all('/contact',contact.contact);
 app.all('/adcontact',contact.ad_contact);

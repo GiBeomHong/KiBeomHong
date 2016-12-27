@@ -279,7 +279,7 @@ hr {
   padding-bottom: 12px;
 }
 #gallery h3 {
-  font-size: 18px;
+  font-size: 15px;
   /*line-height: 8px;*/
 }
 #gallery h2 {
@@ -292,11 +292,20 @@ hr {
 }
 #gallery h1 {
   font-size: 30px;
-  letter-spacing: 8px;
+  letter-spacing: 5px;
   font-style: normal;
   font-weight: bold;
   padding-top: 10px;
   font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;
+}
+
+#gallery h4 {
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-style: normal;
+  padding-top: 10px;
+  line-height:inherit;
+  /*font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;*/
 }
 
 /* history section */

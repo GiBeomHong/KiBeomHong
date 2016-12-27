@@ -21,7 +21,7 @@ exports.past = function(req,res,callback){
 }
 
 exports.staff = function(req,res,callback){
-    res.render('../views/staff_real.html');
+    res.render('../views/staff.html');
 }
 
 exports.enroll = function(req,res,callback){
@@ -34,6 +34,10 @@ exports.popup = function(req,res,callback){
 
 exports.reply = function(req,res,callback){
     res.render('../views/reply.html');
+}
+
+exports.life = function(req,res,callback){
+    res.render('../views/life.html');
 }
 
 exports.contact = function(req,res,callback){
@@ -54,6 +58,14 @@ exports.etc_contact = function (req,res,callback){
 
 exports.ad_contact = function (req,res,callback){
     res.render('../views/ad_contact.html');
+}
+
+exports.teacher = function (req,res,callback){
+    res.render('../views/teacher.html');
+}
+
+exports.event = function (req,res,callback){
+    res.render('../views/event.html');
 }
 
 // youtube_api 사용 //
