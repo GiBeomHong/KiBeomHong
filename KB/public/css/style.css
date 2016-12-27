@@ -387,16 +387,16 @@ hr {
 
 /* partner section */
 #partner {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #f0f0f0;
 }
 #partner .col-md-4 {
   padding-top: 52px;
 }
 #partner img {
-  width: 100%;
-  padding-bottom: 18px;
+  /*width: 100%;*/
+  /*padding-bottom: 18px;*/
 }
 #partner .col-md-4 div {
   position: relative;
