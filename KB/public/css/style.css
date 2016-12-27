@@ -138,7 +138,7 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   height: inherit;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 #home img{
@@ -169,8 +169,13 @@ hr {
 }
 
 #home h2 {
-  font-size: 20px;
-  letter-spacing: 8px;
+
+  font-size: 30px;
+  letter-spacing: 4px;
+
+  /*font-size: 20px;*/
+  /*letter-spacing: 8px;*/
+  line-height: inherit;
   font-style: normal;
   font-weight: bold;
   padding-top: 10px;
@@ -300,6 +305,54 @@ hr {
 }
 
 #gallery h4 {
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-style: normal;
+  padding-top: 10px;
+  line-height:inherit;
+  /*font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;*/
+}
+
+/* reply section */
+#reply {
+  padding-top: 80px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+#reply .col-md-4 {
+  padding-top: 52px;
+}
+#reply img {
+  width: 100%;
+  padding-bottom: 18px;
+}
+#reply .col-md-4 div {
+  position: relative;
+  bottom: 18px;
+  padding-bottom: 12px;
+}
+#reply h3 {
+  font-size: 15px;
+  line-height: 25px;
+}
+#reply h2 {
+  font-size: 30px;
+  letter-spacing: 8px;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 10px;
+  font-family: 'BM JUA_OTF';
+}
+#reply h1 {
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 10px;
+  font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;
+}
+
+#reply h4 {
   font-size: 15px;
   letter-spacing: 2px;
   font-style: normal;
@@ -506,4 +559,53 @@ footer .fa {
 }
 #copyright a:hover {
   color: #FF0;
+}
+
+/* contact section */
+#contact {
+  padding-top: 80px;
+  padding-bottom: 10px;
+  background: white;
+  /*text-align: center;*/
+}
+#contact .col-md-4 {
+  padding-top: 52px;
+}
+#contact img {
+  width: 100%;
+  padding-bottom: 18px;
+}
+#contact .col-md-4 div {
+  position: relative;
+  bottom: 18px;
+  padding-bottom: 12px;
+}
+#contact h3 {
+  font-size: 15px;
+  /*line-height: 8px;*/
+}
+#contact h2 {
+  font-size: 30px;
+  letter-spacing: 8px;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 10px;
+  font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;
+}
+#contact h1 {
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 10px;
+  font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;
+}
+
+#contact h4 {
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-style: normal;
+  padding-top: 10px;
+  line-height:inherit;
+  /*font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;*/
 }
