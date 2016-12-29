@@ -467,6 +467,14 @@ hr {
 #contact input {
   height: 48px;
 }
+#contact span {
+  /*font-family: 'BM JUA_OTF';*/
+  font-family: 'Roboto', sans-serif;
+  color: #848484;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  line-height: 28px;
+}
 #contact input[type="submit"] {
   background: transparent;
   border: 2px solid #999;
@@ -633,12 +641,12 @@ footer .fa {
   /*line-height: 8px;*/
 }
 #staff h2 {
-  font-size: 30px;
-  letter-spacing: 8px;
+  font-size: 20px;
+  letter-spacing: 5px;
   font-style: normal;
   font-weight: bold;
   padding-top: 10px;
-  font-family: 'BM JUA_OTF';
+  font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;
 }
 #staff h1 {
   font-size: 30px;
