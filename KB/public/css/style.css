@@ -184,7 +184,7 @@ hr {
 
 #home h3 {
   font-size: 17px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-style: normal;
   padding-top: 10px;
   color : grey;
@@ -306,10 +306,10 @@ hr {
 
 #gallery h4 {
   font-size: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-style: normal;
   padding-top: 10px;
-  line-height:inherit;
+  line-height:1.8;
   /*font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;*/
 }
 
@@ -358,6 +358,7 @@ hr {
   font-style: normal;
   padding-top: 10px;
   line-height:inherit;
+  color: grey;
   /*font-family: 'NanumBarunGothic', '나눔바른고딕', sans-serif;*/
 }
 
