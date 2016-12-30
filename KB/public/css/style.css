@@ -363,8 +363,8 @@ hr {
 
 /* history section */
 #history {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 10px;
+  /*padding-bottom: 80px;*/
   background : rgba(240, 240, 240, 0.16);
 }
 #history .col-md-4 {
