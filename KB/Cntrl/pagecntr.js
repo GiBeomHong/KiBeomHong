@@ -44,6 +44,10 @@ exports.branded = function(req,res,callback){
     res.render('../views/branded.html');
 }
 
+exports.short = function(req,res,callback){
+    res.render('../views/short.html');
+}
+
 exports.contact = function(req,res,callback){
     res.render('../views/contact.html');
 }

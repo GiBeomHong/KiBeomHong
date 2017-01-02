@@ -67,6 +67,7 @@ app.all('/teacher',Pagecntr.teacher);
 app.all('/event',Pagecntr.event);
 app.all('/contact',Pagecntr.contact);
 app.all('/life',Pagecntr.life);
+app.all('/short',Pagecntr.short);
 
 app.all('/contact',contact.contact);
 app.all('/adcontact',contact.ad_contact);
